@@ -1,0 +1,270 @@
+/* define custom properties */
+:root {
+  --dark-liver: #584b53ff;
+  --copper-rose: #9d5c63ff;
+  --periwinkle-crayola: #d6e3f8ff;
+  --seashell: #fef5efff;
+  --desert-sand: #e4bb97ff;
+
+  --dark-purple: #242038ff;
+  --slate-blue: #725ac1ff;
+  --middle-blue-purple: #8d86c9ff;
+  --lavender-gray: #cac4ceff;
+  --linen: #f7ece1ff;
+
+  --turquoise: #5dd9c1ff;
+  --magic-mint: #acfcd9ff;
+  --lavender-floral: #b084ccff;
+  --cyber-grape: #665687ff;
+  --russian-violet: #190933ff;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #725ac1ff;
+  float: right;
+}
+
+a:hover {
+  color: #242038ff;
+}
+
+/* -------- HEADER -------- */
+header h1 {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+header nav {
+  display: block;
+}
+
+header nav ul {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+/* ------ MAIN ------- */
+main {
+  padding: 0 10%;
+  margin: 0 auto;
+}
+
+.container {
+  border: 3px solid #242038;
+  border-radius: 30px;
+  padding: 40px;
+  margin: 50px auto;
+  text-align: center;
+  overflow: scroll;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin: 20px auto;
+}
+
+hr {
+  width: 300px;
+  border: 5px solid #cac4ce;
+  border-radius: 4px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+/* ------ colors ------- */
+.colors .grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: start;
+  justify-content: space-between;
+  grid-auto-flow: row;
+  grid-row-gap: 50px;
+}
+
+.colors .field {
+  height: 180px;
+  width: 180px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.dark-purple {
+  color: white;
+  background-color: var(--dark-purple);
+  grid-column: 1 / span 1;
+}
+.slate-blue {
+  color: white;
+  background-color: var(--slate-blue);
+  grid-column: 2 / span 1;
+}
+.middle-blue-purple {
+  background-color: var(--middle-blue-purple);
+  grid-column: 3 / span 1;
+}
+.lavender-gray {
+  background-color: var(--lavender-gray);
+  grid-column: 4 / span 1;
+}
+.linen {
+  background-color: var(--linen);
+  grid-column: 5 / span 1;
+}
+
+.dark-liver {
+  color: white;
+  background-color: var(--dark-liver);
+}
+.copper-rose {
+  color: white;
+  background-color: var(--copper-rose);
+}
+.periwinkle-crayola {
+  color: black;
+  background-color: var(--periwinkle-crayola);
+}
+.seashell {
+  color: black;
+  background-color: var(--seashell);
+}
+.desert-sand {
+  color: black;
+  background-color: var(--desert-sand);
+}
+
+.turquoise {
+  background-color: var(--turquoise);
+}
+.magic-mint {
+  background-color: var(--magic-mint);
+}
+.lavender-floral {
+  color: white;
+  background-color: var(--lavender-floral);
+}
+.cyber-grape {
+  color: white;
+  background-color: var(--cyber-grape);
+}
+.russian-violet {
+  color: white;
+  background-color: var(--russian-violet);
+}
+
+/* ------ Fonts ------- */
+.subcontainer {
+  vertical-align: text-top;
+  display: inline-block;
+  padding: 20px;
+}
+
+.subcontainer h1 {
+  line-height: 1;
+}
+
+.fontMontserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fontOswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.fontWorkSans {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.fontOpenSans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.fontPoppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.fontNunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.fontDarkerGrotesque {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 22px;
+}
+
+.extra-light {
+  font-weight: 200;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* ------ buttons ------ */
+.buttons {
+  text-align: center;
+}
+
+.button {
+  background-color: #725ac1;
+  /* Green */
+  border: 2px solid #725ac1;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  margin: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover {
+  color: #242038;
+  background-color: white;
+  box-shadow: none;
+}
+
+/* ------ textstyles ------ */
+/* ------- FOOTER -------- */
+footer {
+  background-color: #8d86c9;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  padding: 25px;
+}
+
+footer p {
+  text-align: center;
+}
